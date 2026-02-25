@@ -1,53 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <header>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <h1>
-      <a href="https://yoshionozawa.github.io/">Yoshio Nozawa's Homepage</a>
-    </h1>
-
-    <link rel="stylesheet" href="stylesheet.css">
-
-    <nav>
-      <ul>
-        <li class="list1"><a href="index.html">Contact</a></li>
-        <li class="list1"><a href="cv.html">CV</a></li>
-        <li class="list1"><a href="research.html">Research</a></li>
-        <li class="list1"><a href="japanese.html">日本語</a></li>      
-        <li class="list1"><a href="investments.html">授業</a></li>      
-      </ul>
-    </nav>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>日本語 - Yoshio Nozawa</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-title">Yoshio Nozawa</a>
+      <button class="hamburger" aria-label="Menu">&#9776;</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="japanese.html" class="active">日本語</a>
+        <a href="investments.html">授業</a>
+      </nav>
+    </div>
   </header>
 
-<div class="body1">
+  <main class="content-wrap">
     <b>略歴</b>
     <p>東京大学教養学部（国際関係論）卒。日本政策投資銀行を経てシカゴ大学PhD（経済学・ファイナンス合同学位）。連邦準備制度理事会（FRB）、香港科技大学を経て、トロント大学准教授（Associate Professor）。研究分野は実証アセットプライシングで、特に信用リスクを伴う証券の価格決定に関心を持っている。</p>
-    <br>
 
     <b>日本語の研究実績</b>
     <ul>
       <li>野澤(2016)<a href="https://sites.google.com/site/yoshionozawa1/goog_357405448">「Merton[1974]モデルに基づく社債の価格評価の問題点と，これを克服するための研究の発展について」</a>、現代ファイナンス38号, 3-25頁.</li>
     </ul>
 
-    <br>
-    
     <b>日本における受賞歴</b>
     <ul>
       <li>2018: 丸淳子賞（日本ファイナンス学会）</li>
       <li>2018: GPIF Finance Award（年金積立金管理運用独立行政法人）</li>
     </ul>
-    <br>
-    
+
     <b>メディア</b>
     <ul>
       <li>日経ビジネス　「ノーベル賞受賞理論は、社債の投資判断に生かせるか？」最新研究で考察するリターンの予測可能性, 2013</li>
     </ul>
-    <br>
 
     <b>ブログ</b>
     <ul>
       <li><a href="https://note.com/ynchoir">Notes</a></li>
     </ul>
+  </main>
 
-</div>
+  <footer class="site-footer">Yoshio Nozawa &middot; University of Toronto</footer>
+
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function () {
+      document.querySelector('.site-nav').classList.toggle('open');
+    });
+  </script>
+</body>
 </html>
